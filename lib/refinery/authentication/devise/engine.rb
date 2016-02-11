@@ -26,9 +26,9 @@ module Refinery
           end
         end
 
-        config.before_configuration do
-          require 'refinery/authentication/devise/initialiser'
-        end
+        # config.before_configuration do
+        #   require 'refinery/authentication/devise/initialiser'
+        # end
 
         config.after_initialize do
           Refinery.register_extension(Refinery::Authentication::Devise)
